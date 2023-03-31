@@ -22,9 +22,9 @@ pipeline {
             }
         }
         
-        stage("Completed") {
+        stage('Completed') {
             steps {
-                sh "Completed pipeline"
+                sh 'Completed pipeline'
             }
         }
     }
