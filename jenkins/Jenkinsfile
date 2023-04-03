@@ -24,7 +24,7 @@ pipeline {
         
         stage('Build Job') {
             steps {
-                build 'Bool Pipe'
+                build job: 'Bool Pipe', parameters: [[$class: 'BooleanParameterValue', name: 'myBoolean', value: true]]
             }
         }
     }
