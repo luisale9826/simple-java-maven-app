@@ -22,9 +22,9 @@ pipeline {
             }
         }
         
-        stage('Completed') {
+        stage('Build Job') {
             steps {
-                sh 'echo Completed pipeline'
+                build 'Bool Pipe'
             }
         }
     }
